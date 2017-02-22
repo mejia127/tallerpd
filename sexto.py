@@ -1,0 +1,15 @@
+#! /usr/bin/env python
+# -*- coding: utf-8 -*-
+
+def inversa(cadena):
+    invertida = ""
+    cont = len(cadena)
+    indice = -1
+    while cont >= 1:
+        invertida += cadena[indice]
+        indice = indice + (-1)
+        cont -= 1
+    return invertida
+
+a=raw_input("ingrese una palabra ")
+print inversa(a)
